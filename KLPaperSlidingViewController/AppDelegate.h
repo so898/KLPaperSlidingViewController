@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KLPaperSlidingViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    KLPaperSlidingViewController *paperSlidingViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -17,7 +17,9 @@
 		796E9E3816E8C48B00D0B9E0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 796E9E3716E8C48B00D0B9E0 /* Default.png */; };
 		796E9E3A16E8C48B00D0B9E0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 796E9E3916E8C48B00D0B9E0 /* Default@2x.png */; };
 		796E9E3C16E8C48B00D0B9E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 796E9E3B16E8C48B00D0B9E0 /* Default-568h@2x.png */; };
-		796E9E3F16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 796E9E3D16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodeld */; };
+		796E9E4716E8C4AD00D0B9E0 /* KLPaperSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796E9E4616E8C4AD00D0B9E0 /* KLPaperSlidingViewController.m */; };
+		796E9E4A16E8C4C400D0B9E0 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 796E9E4916E8C4C400D0B9E0 /* UIImage+ImageWithUIView.m */; };
+		796E9E4C16E8C4DA00D0B9E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796E9E4B16E8C4DA00D0B9E0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,11 @@
 		796E9E3716E8C48B00D0B9E0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		796E9E3916E8C48B00D0B9E0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		796E9E3B16E8C48B00D0B9E0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		796E9E3E16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KLPaperSlidingViewController.xcdatamodel; sourceTree = "<group>"; };
+		796E9E4516E8C4AD00D0B9E0 /* KLPaperSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLPaperSlidingViewController.h; sourceTree = "<group>"; };
+		796E9E4616E8C4AD00D0B9E0 /* KLPaperSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLPaperSlidingViewController.m; sourceTree = "<group>"; };
+		796E9E4816E8C4C300D0B9E0 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		796E9E4916E8C4C400D0B9E0 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		796E9E4B16E8C4DA00D0B9E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796E9E4C16E8C4DA00D0B9E0 /* QuartzCore.framework in Frameworks */,
 				796E9E2416E8C48A00D0B9E0 /* UIKit.framework in Frameworks */,
 				796E9E2616E8C48A00D0B9E0 /* Foundation.framework in Frameworks */,
 				796E9E2816E8C48A00D0B9E0 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +63,7 @@
 		796E9E1716E8C48A00D0B9E0 = {
 			isa = PBXGroup;
 			children = (
+				796E9E4B16E8C4DA00D0B9E0 /* QuartzCore.framework */,
 				796E9E2B16E8C48A00D0B9E0 /* KLPaperSlidingViewController */,
 				796E9E2216E8C48A00D0B9E0 /* Frameworks */,
 				796E9E2116E8C48A00D0B9E0 /* Products */,
@@ -84,10 +92,13 @@
 		796E9E2B16E8C48A00D0B9E0 /* KLPaperSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				796E9E4816E8C4C300D0B9E0 /* UIImage+ImageWithUIView.h */,
+				796E9E4916E8C4C400D0B9E0 /* UIImage+ImageWithUIView.m */,
 				796E9E3416E8C48A00D0B9E0 /* AppDelegate.h */,
 				796E9E3516E8C48A00D0B9E0 /* AppDelegate.m */,
-				796E9E3D16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodeld */,
 				796E9E2C16E8C48A00D0B9E0 /* Supporting Files */,
+				796E9E4516E8C4AD00D0B9E0 /* KLPaperSlidingViewController.h */,
+				796E9E4616E8C4AD00D0B9E0 /* KLPaperSlidingViewController.m */,
 			);
 			path = KLPaperSlidingViewController;
 			sourceTree = "<group>";
@@ -173,7 +184,8 @@
 			files = (
 				796E9E3216E8C48A00D0B9E0 /* main.m in Sources */,
 				796E9E3616E8C48A00D0B9E0 /* AppDelegate.m in Sources */,
-				796E9E3F16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodeld in Sources */,
+				796E9E4716E8C4AD00D0B9E0 /* KLPaperSlidingViewController.m in Sources */,
+				796E9E4A16E8C4C400D0B9E0 /* UIImage+ImageWithUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,19 +302,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		796E9E3D16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				796E9E3E16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodel */,
-			);
-			currentVersion = 796E9E3E16E8C48B00D0B9E0 /* KLPaperSlidingViewController.xcdatamodel */;
-			path = KLPaperSlidingViewController.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 796E9E1816E8C48A00D0B9E0 /* Project object */;
 }

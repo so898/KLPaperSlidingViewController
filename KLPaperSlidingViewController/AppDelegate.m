@@ -20,6 +20,25 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [KLPaperSlidingViewController new];
+    paperSlidingViewController = (KLPaperSlidingViewController *)self.window.rootViewController;
+    
+    UIViewController *one = [UIViewController new];
+    one.view.backgroundColor = [UIColor redColor];
+    
+    UIViewController *two = [UIViewController new];
+    two.view.backgroundColor = [UIColor greenColor];
+    
+    UIViewController *three = [UIViewController new];
+    three.view.backgroundColor = [UIColor yellowColor];
+    
+    paperSlidingViewController.leftViewController = two;
+    
+    paperSlidingViewController.midViewController = one;
+    
+    paperSlidingViewController.rightViewController = three;
+    
     return YES;
 }
 
